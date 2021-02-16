@@ -1,2 +1,2 @@
-[中文](/)&nbsp;
-[English](/en/)&nbsp;
+[中文](/)&nbsp;&nbsp;
+[English](/en/)

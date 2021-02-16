@@ -1,0 +1,55 @@
+/* Global Style */
+body *::selection {
+    color: #fff;
+    background-color: var(--theme-color, #42b983);
+}
+
+/* Markdown Style */
+article blockquote {
+    color: #828b93;
+}
+
+article blockquote code {
+    font-weight: 400 !important;
+}
+
+article code {
+    color: #34495e !important;
+}
+
+/* Navbar Style */
+.app-nav p {
+    margin-right: 15px;
+}
+
+/* Sidebar Style */
+.sidebar h1 {
+    font-weight: 400;
+}
+
+.sidebar ul li p.active > a {
+    border-right: 2px solid;
+    color: var(--theme-color,#42b983);
+    font-weight: 600;
+}
+
+/* Code Highlight Style */
+.token.string {
+    color: #8eb472;
+}
+
+.token.function {
+    color: #43A3EF;
+}
+
+.token.keyword, .token.operator {
+    color: #A878DD;
+}
+
+.token.comment, .token.cmd {
+    color: #a5abb6;
+}
+
+.token.class-name {
+    color: #E5A44B;
+}

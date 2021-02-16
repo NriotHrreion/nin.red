@@ -8,3 +8,5 @@ Hello, I'm **NriotHrreion**.
 - **Github**: [NriotHrreion](https://github.com/NriotHrreion)
 - **Twitter**: [@Nriot_McPack](https://twitter.com/Nriot_McPack)
 - **Blog**: [nriothrreion.github.io](https://nriothrreion.github.io)
+
+`Copyright (c) NriotHrreion 2021`
