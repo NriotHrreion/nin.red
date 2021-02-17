@@ -1,0 +1,97 @@
+/* Global Style */
+body *::selection {
+    color: #fff;
+    background-color: var(--theme-color, #42b983);
+}
+
+/* Markdown Style */
+article blockquote {
+    color: #828b93;
+}
+
+article blockquote code {
+    font-weight: 400 !important;
+}
+
+article code {
+    color: #34495e !important;
+}
+
+article pre .docsify-copy-code-button {
+    font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+}
+
+article pre:hover .docsify-copy-code-button {
+    opacity: 1 !important;
+}
+
+/* Navbar Style */
+.app-nav p {
+    margin-right: 15px;
+}
+
+/* Sidebar Style */
+.sidebar .app-name {
+    font-weight: 400;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+.sidebar ul li p.active > a {
+    border-right: 2px solid;
+    color: var(--theme-color,#42b983);
+    font-weight: 600;
+}
+
+.sidebar hr {
+    width: 90%;
+    border: none;
+    border-top: 2px solid #EDEDED;
+}
+
+.sidebar .sidebar-link {
+    font-size: 12pt;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+.sidebar .sidebar-link::before {
+    content: "- ";
+    color: #9E9E9E;
+}
+
+.sidebar .search input {
+    transition: box-shadow .3s;
+    -webkit-transition: box-shadow .3s;
+    -o-transition: box-shadow .3s;
+    -moz-transition: box-shadow .3s;
+}
+
+.sidebar .search input:hover {
+    box-shadow: 0 0 5px var(--theme-color, #42b983);
+}
+
+.sidebar .search input::placeholder {
+    font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+}
+
+/* Code Highlight Style */
+.token.string {
+    color: #8eb472;
+}
+
+.token.function {
+    color: #43A3EF;
+}
+
+.token.keyword, .token.operator {
+    color: #A878DD;
+}
+
+.token.comment, .token.cmd {
+    color: #a5abb6;
+}
+
+.token.class-name {
+    color: #E5A44B;
+}

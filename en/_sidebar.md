@@ -1,3 +1,5 @@
+<br>
+
 * [Home](/en/ "Nriot's Website")
 * [Treasure Chest](/en/treasure_chest.md)
 
@@ -6,3 +8,11 @@
         * [Quick Start](/en/guide/do_terminal/quick_start.md)
         * [Custom Command](/en/guide/do_terminal/custom_command.md)
     * [Online Chatting Room](/en/guide/ws_chat/)
+
+<br>
+
+* **Links**
+---
+
+* <a href="https://github.com/NriotHrreion" class="sidebar-link">Github</a>
+* <a href="https://nriothrreion.github.io" class="sidebar-link">Blog</a>
