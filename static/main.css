@@ -25,16 +25,10 @@ article pre:hover .docsify-copy-code-button {
     opacity: 1 !important;
 }
 
-/* Navbar Style */
-.app-nav p {
-    margin-right: 15px;
-}
-
 /* Sidebar Style */
 .sidebar .app-name {
     font-weight: 400;
-    margin-top: 35px;
-    margin-bottom: 0;
+    margin: 35px 0 35px 0;
 }
 
 .sidebar ul li p.active > a {
@@ -61,6 +55,8 @@ article pre:hover .docsify-copy-code-button {
 }
 
 .sidebar .search input {
+    font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+    
     transition: box-shadow .3s;
     -webkit-transition: box-shadow .3s;
     -o-transition: box-shadow .3s;
@@ -69,10 +65,6 @@ article pre:hover .docsify-copy-code-button {
 
 .sidebar .search input:hover {
     box-shadow: 0 0 5px var(--theme-color, #42b983);
-}
-
-.sidebar .search input::placeholder {
-    font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 }
 
 /* Code Highlight Style */
