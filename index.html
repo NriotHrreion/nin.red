@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="/static/main.css">
   <link rel="shortcut icon" href="/static/icon.png" type="image/x-icon">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SJBLYYSEN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1SJBLYYSEN');
+  </script>
 </head>
 <body>
   <div id="app"></div>
@@ -40,8 +48,7 @@
       },
       copyCode: {
         buttonText: "Copy"
-      },
-      ga: "G-1SJBLYYSEN"
+      }
     }
   </script>
   <!-- Docsify v4 -->
@@ -49,7 +56,6 @@
   <!-- Docsify Plugins -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js"></script>
   <script src="/static/copycode.js"></script>
   <script src="/static/bash-highlight.js"></script>
 </body>
