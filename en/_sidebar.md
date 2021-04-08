@@ -14,4 +14,5 @@
 ---
 
 * <a href="https://github.com/NriotHrreion" class="sidebar-link">Github</a>
+* <a href="https://space.bilibili.com/167995410" class="sidebar-link">Bilibili</a>
 * <a href="https://nriothrreion.github.io" class="sidebar-link">Blog</a>

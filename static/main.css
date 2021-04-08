@@ -26,6 +26,10 @@ article pre:hover .docsify-copy-code-button {
 }
 
 /* Sidebar Style */
+.sidebar {
+    background-color: #fbfbfc;
+}
+
 .sidebar .app-name {
     font-weight: 400;
     margin: 35px 0 35px 0;
@@ -56,6 +60,7 @@ article pre:hover .docsify-copy-code-button {
 
 .sidebar .search input {
     font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+    background-color: transparent;
     
     transition: box-shadow .3s;
     -webkit-transition: box-shadow .3s;

@@ -1,4 +1,6 @@
 (function(Prism) {
+	// NriotHrreion Edited
+
 	// $ set | grep '^[A-Z][^[:space:]]*=' | cut -d= -f1 | tr '\n' '|'
 	// + LC_ALL, RANDOM, REPLY, SECONDS.
 	// + make sure PS1..4 are here as they are not always set,
