@@ -70,10 +70,14 @@ article pre:hover .docsify-copy-code-button {
     font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
     background-color: transparent;
     
-    transition: background-color .3s;
-    -webkit-transition: background-color .3s;
-    -o-transition: background-color .3s;
-    -moz-transition: background-color .3s;
+    transition-property: background-color, border-color;
+    transition-duration: .2s;
+    -webkit-transition-property: background-color, border-color;
+    -webkit-transition-duration: .2s;
+    -moz-transition-property: background-color, border-color;
+    -moz-transition-duration: .2s;
+    -o-transition-property: background-color, border-color;
+    -o-transition-duration: .2s;
 }
 
 .sidebar .search input:hover {
@@ -83,11 +87,6 @@ article pre:hover .docsify-copy-code-button {
 .sidebar .search input:focus {
     box-shadow: none !important;
     background-color: #f1f1f1;
-
-    transition: border-color .3s;
-    -webkit-transition: border-color .3s;
-    -o-transition: border-color .3s;
-    -moz-transition: border-color .3s;
 }
 
 /* Code Highlight Style */
@@ -117,11 +116,11 @@ article pre:hover .docsify-copy-code-button {
         background-color: #35363A;
     }
 
-    article p, strong, code, span, h1, h2, h3, h4, h5, li::marker {
+    article p, strong, code, h1 span, h2 span, h3 span, h4 span, h5 span, li, li::marker {
         color: #e0e0e0 !important;
     }
 
-    article code, pre {
+    article code, pre, code:not(span) {
         background-color: #464646 !important;
     }
 
@@ -153,6 +152,14 @@ article pre:hover .docsify-copy-code-button {
         color: #ffffff !important;
     }
 
+    .pagination-item-label span {
+        color: var(--theme-color, #42b983);
+    }
+
+    .pagination-item-label svg {
+        display: none;
+    }
+
     .app-nav a {
         color: #ffffff !important;
     }
@@ -177,7 +184,7 @@ article pre:hover .docsify-copy-code-button {
         color: #cecece !important;
     }
 
-    .sidebar li.active a, .sidebar p.active a {
+    .sidebar li.active > a, .sidebar p.active > a {
         color: var(--theme-color, #42b983) !important;
     }
 
@@ -186,13 +193,12 @@ article pre:hover .docsify-copy-code-button {
     }
 
     .sidebar .search {
-        /* background-color: #545558 !important;
-        border-color: #545558; */
         background-color: #3c3e41 !important;
         border-color: #3c3e41;
     }
 
     .sidebar .search input {
+        color: #ffffff;
         caret-color: #dbdbdb;
     }
 
@@ -202,5 +208,9 @@ article pre:hover .docsify-copy-code-button {
 
     .sidebar .search input::placeholder {
         color: #bdbdbd;
+    }
+
+    .token.punctuation {
+        color: #9FA8AB;
     }
 }
