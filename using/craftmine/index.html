@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="NriotHrreion">
+    <title>Craftmine</title>
+    <link rel="icon" href="./sources/app_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/downloadjs@1.4.7/download.min.js"></script>
+</head>
+<body>
+    <div class="about-container">
+        <p><b>Craftmine</b> By NriotHrreion</p>
+    </div>
+    <div class="game-container">
+        <canvas id="main" width="1200" height="540"></canvas>
+    </div>
+    <div class="control-panel-container">
+        <div class="blocks-container">
+            <button data-block="stone"><img src="./textures/stone.png" id="texture:stone"></button>
+            <button data-block="sand"><img src="./textures/sand.png" id="texture:sand"></button>
+            <button data-block="dirt"><img src="./textures/dirt.png" id="texture:dirt"></button>
+            <button data-block="grass_block"><img src="./textures/grass_block.png" id="texture:grass_block"></button>
+            <button data-block="oak_log"><img src="./textures/oak_log.png" id="texture:oak_log"></button>
+            <button data-block="oak_planks"><img src="./textures/oak_planks.png" id="texture:oak_planks"></button>
+            <button data-block="oak_door"><img src="./textures/oak_door_top.png" id="texture:oak_door_top"></button>
+            <button data-block="oak_sapling"><img src="./textures/oak_sapling.png" id="texture:oak_sapling"></button>
+            <button data-block="glass"><img src="./textures/glass.png" id="texture:glass"></button>
+            <button data-block="stone_bricks"><img src="./textures/stone_bricks.png" id="texture:stone_bricks"></button>
+            <button data-block="crafting_table"><img src="./textures/crafting_table.png" id="texture:crafting_table"></button>
+            <button data-block="furnace"><img src="./textures/furnace.png" id="texture:furnace"></button>
+            <button data-block="chest"><img src="./textures/chest.png" id="texture:chest"></button>
+            <button data-block="obsidian"><img src="./textures/obsidian.png" id="texture:obsidian"></button>
+            <button data-block="bedrock"><img src="./textures/bedrock.png" id="texture:bedrock"></button>
+            <button data-block="air" class="control-btn eraser">橡皮擦</button>
+        </div>
+        <dir class="info-container">
+            <span id="fps">fps: </span>&nbsp;
+            <span id="cb">当前方块: </span>
+            <button data-block="$music" class="control-btn">音乐</button>
+            <button data-block="$reset" class="control-btn">重置</button>
+            <button data-block="$save" class="control-btn">保存</button>
+            <button data-block="$load" class="control-btn">载入</button>
+            <button data-block="$download" class="control-btn">下载</button>
+        </dir>
+    </div>
+    <div class="assets" style="display: none">
+        <img src="./textures/oak_door_bottom.png" id="texture:oak_door_bottom">
+        <input type="file" accept=".cmworld" id="loadInput">
+    </div>
+    <audio src="./sources/music.ogg" id="source:music" loop hidden></audio>
+    <script src="./block.js"></script>
+    <script src="./render.js"></script>
+    <script src="./game.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
