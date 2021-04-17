@@ -1,3 +1,5 @@
+// Define Blocks
+
 class BlockStone {
     constructor(renderer) {
         this.color = "#9e9e9e";

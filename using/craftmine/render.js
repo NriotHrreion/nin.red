@@ -55,6 +55,9 @@ class Render {
                     if(!(this.map[y + 1][x] instanceof BlockGrassBlock) && this.map[y][x] instanceof BlockOakSapling) {
                         this.map[y][x] = new BlockAir(this);
                     }
+                    if(this.map[y + 1][x] instanceof BlockGrassBlock && !(this.map[y][x] instanceof BlockOakSapling) && !(this.map[y][x] instanceof BlockAir)) {
+                        this.map[y + 1][x] = new BlockDirt(this);
+                    }
                     if(this.map[y - 1][x] instanceof BlockAir && this.map[y][x] instanceof BlockOakDoor) {
                         if(this.map[y][x].part == "bottom") {
                             this.map[y - 1][x] = new BlockOakDoor("top");

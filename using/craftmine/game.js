@@ -11,8 +11,10 @@ class Game {
         this.fps = 60;
         this.renderer = new Render(this);
 
+        this.timer = null;
+
         this.init();
-        console.log("Craftmine Inited. <Game>");
+        console.log("Craftmine Inited. fps: "+ this.fps +" <Game>");
     }
 
     init() {
@@ -21,8 +23,8 @@ class Game {
         this.canvas.addEventListener("mousedown", () => this.setDrawing(true));
         this.canvas.addEventListener("mouseup", () => this.setDrawing(false));
         this.canvas.addEventListener("mousemove", (e) => {
-            this.mousePosition.x = (e.pageX || e.clientX + document.body.scrollLeft) - parseInt(e.target.offsetLeft);
-            this.mousePosition.y = (e.pageY || e.clientY + document.body.scrollTop) - parseInt(e.target.offsetTop);
+            this.mousePosition.x = e.offsetX - this.renderer.blockSize / 2;
+            this.mousePosition.y = e.offsetY - this.renderer.blockSize / 2;
         });
         this.canvas.addEventListener("mouseleave", () => {
             this.mousePosition = {x: 0, y: 0};
@@ -54,7 +56,7 @@ class Game {
 
         this.initBackground();
 
-        setInterval(() => {
+        this.timer = setInterval(() => {
             this.renderer.update();
         }, 1000 / this.fps);
     }
@@ -122,5 +124,16 @@ class Game {
 
     setDrawing(isDrawing) {
         this.isDrawing = isDrawing;
+    }
+
+    setFps(fps) { // for users to set fps (0 < fps <= 1000)
+        this.fps = fps;
+
+        clearInterval(this.timer);
+        this.timer = setInterval(() => {
+            this.renderer.update();
+        }, 1000 / this.fps);
+
+        console.log("Setted. fps: "+ this.fps +" <Game.setFps>");
     }
 }
