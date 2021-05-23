@@ -8,6 +8,7 @@
 
 名称|链接|简介
 ---|---|---
+Craftmine|[戳我](https://github.com/NriotHrreion/Craftmine-App)|Minecraft 2D
 Nocp Startpage|[戳我](https://nriothrreion.github.io/Nocp-startpage/)|更简洁的**Chrome新标签页**
 Function Painting|[戳我](https://nin.red/using/function-painting/)|函数图像生成器
 CPS 检测器|[戳我](https://nin.red/using/cps/)|检测你的每秒钟点击速度
