@@ -24,19 +24,19 @@ By NriotHrreion
 
 1. 下载游戏至本地
 
-```cmd
+```bash
 git clone https://github.com/NriotHrreion/ICraft-App.git
 ```
 
 2. 在游戏根目录下载依赖
 
-```cmd
+```bash
 npm install
 ```
 
 3. 启动App
 
-```cmd
+```bash
 npm run ic-launch
 ```
 
@@ -52,7 +52,7 @@ npm run ic-launch
 
 1. 下载游戏至本地
 
-```cmd
+```bash
 git clone https://github.com/NriotHrreion/ICraft-App.git
 ```
 
@@ -71,7 +71,7 @@ git clone https://github.com/NriotHrreion/ICraft-App.git
 
 3. 在游戏根目录启动服务器
 
-```cmd
+```bash
 npm run ic-server
 ```
 

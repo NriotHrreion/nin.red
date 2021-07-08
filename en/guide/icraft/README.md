@@ -24,19 +24,19 @@ If you'd like to enjoy the whole game, please read the following carefully
 
 1. Download the game
 
-```cmd
+```bash
 git clone https://github.com/NriotHrreion/ICraft-App.git
 ```
 
 2. Install the dependency at the root directory of the game
 
-```cmd
+```bash
 npm install
 ```
 
 3. Launch the App
 
-```cmd
+```bash
 npm run ic-launch
 ```
 
@@ -52,7 +52,7 @@ If you want to play ICraft with your friends, you can try to open a ICraft serve
 
 1. Download the game
 
-```cmd
+```bash
 git clone https://github.com/NriotHrreion/ICraft-App.git
 ```
 
@@ -71,7 +71,7 @@ If the server cannot find the specified world file, it will generate a new one a
 
 3. Launch the server at the root directory of the game
 
-```cmd
+```bash
 npm run ic-server
 ```
 
