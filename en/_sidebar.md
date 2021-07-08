@@ -7,6 +7,7 @@
         * [Custom Command](/en/guide/do_terminal/custom_command.md)
     * [Online Chatting Room](/en/guide/ws_chat/)
     * [Function Painting](/en/guide/function_painting/)
+    * [ICraft](/en/guide/icraft/)
 
 <br>
 

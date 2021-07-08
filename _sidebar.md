@@ -7,6 +7,7 @@
         * [自定义指令](/guide/do_terminal/custom_command.md)
     * [网络聊天室](/guide/ws_chat/)
     * [Function Painting](/guide/function_painting/)
+    * [ICraft](/guide/icraft/)
 
 <br>
 
